@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects - Network automation and AWS cloud projects">
+    <title>Projects - Scott Penry</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">Scott Penry</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Projects</h1>
+            <p>Hands-on network automation and AWS cloud infrastructure projects</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section">
+        <div class="container">
+            
+            <!-- Network Automation Projects -->
+            <div class="project-category">
+                <h2 class="category-title">Network Automation</h2>
+                
+                <!-- Cisco NSO -->
+                <div class="project-detail" id="cisco-nso">
+                    <div class="project-header">
+                        <div>
+                            <h3>Cisco NSO Orchestration Framework</h3>
+                            <p class="project-subtitle">Multi-platform network orchestration using Cisco NSO</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Sparty-5A/cisco-nso-orchestration" target="_blank" class="btn btn-small">View on GitHub</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-content">
+                        <p>
+                            Built a production-grade orchestration framework leveraging Cisco NSO (Network Services Orchestrator) 
+                            to manage multi-vendor network devices. The framework supports Cisco IOS-XE, IOS-XR, and NX-OS platforms, 
+                            providing intent-based configuration and reconciliation capabilities.
+                        </p>
+                        
+                        <div class="project-features">
+                            <h4>Key Features</h4>
+                            <ul>
+                                <li>Multi-platform support (IOS-XE, IOS-XR, NX-OS)</li>
+                                <li>Intent-based configuration model</li>
+                                <li>Dry-run mode for safe testing</li>
+                                <li>Configuration reconciliation engine</li>
+                                <li>RESTCONF API integration</li>
+                                <li>Jinja2 templating for flexibility</li>
+                                <li>Rollback capabilities</li>
+                            </ul>
+                        </div>
+
+                        <div class="project-tech-stack">
+                            <h4>Technologies Used</h4>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Cisco NSO</span>
+                            <span class="tech-badge">RESTCONF</span>
+                            <span class="tech-badge">Jinja2</span>
+                            <span class="tech-badge">YANG Models</span>
+                        </div>
+
+                        <div class="project-learning">
+                            <h4>What I Learned</h4>
+                            <p>
+                                This project deepened my understanding of network automation beyond simple scripting. 
+                                Working with NSO taught me about intent-based networking, service modeling, and the 
+                                importance of reconciliation in production environments. The RESTCONF API integration 
+                                showed me how modern network management can follow DevOps principles.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nokia SROS -->
+                <div class="project-detail" id="nokia-sros">
+                    <div class="project-header">
+                        <div>
+                            <h3>Nokia SROS Infrastructure as Code</h3>
+                            <p class="project-subtitle">9-layer orchestration framework for Nokia SROS devices</p>
+                        </div>
+                        <div class="project-links">
+                            <span class="badge-private">Private Repository</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-content">
+                        <p>
+                            Developed a comprehensive Infrastructure as Code framework for Nokia SROS (Service Router Operating System) 
+                            devices using Python and NETCONF. The 9-layer architecture provides production-grade features including 
+                            confirmed commits, reconciliation engine, and comprehensive audit trails.
+                        </p>
+                        
+                        <div class="project-features">
+                            <h4>Architecture Highlights</h4>
+                            <ul>
+                                <li>9-layer modular architecture</li>
+                                <li>NETCONF protocol with confirmed commits</li>
+                                <li>Configuration reconciliation and drift detection</li>
+                                <li>Comprehensive audit logging</li>
+                                <li>Pydantic-based configuration validation</li>
+                                <li>Error handling and rollback mechanisms</li>
+                                <li>Support for complex network services</li>
+                            </ul>
+                        </div>
+
+                        <div class="project-tech-stack">
+                            <h4>Technologies Used</h4>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">NETCONF</span>
+                            <span class="tech-badge">Nokia SROS</span>
+                            <span class="tech-badge">Pydantic</span>
+                            <span class="tech-badge">XML/XPath</span>
+                        </div>
+
+                        <div class="project-learning">
+                            <h4>What I Learned</h4>
+                            <p>
+                                This project taught me how to build production-grade automation that's reliable enough for 
+                                critical infrastructure. Working with NETCONF's confirmed commit feature and building proper 
+                                reconciliation logic showed me the complexity required for enterprise network automation. 
+                                The layered architecture demonstrates separation of concerns and maintainability.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- AWS Cloud Projects -->
+            <div class="project-category">
+                <h2 class="category-title">AWS Cloud Infrastructure</h2>
+                
+                <!-- Transit Gateway -->
+                <div class="project-detail" id="transit-gateway">
+                    <div class="project-header">
+                        <div>
+                            <h3>AWS Transit Gateway Hub-and-Spoke</h3>
+                            <p class="project-subtitle">Multi-VPC networking with centralized routing</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Sparty-5A/aws-transit-gateway-hub" target="_blank" class="btn btn-small">View on GitHub</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-content">
+                        <p>
+                            Implemented hub-and-spoke architecture connecting multiple VPCs using AWS Transit Gateway. 
+                            Demonstrates transitive routing, automatic route propagation, and multi-AZ high availability 
+                            design. Reduces network complexity from O(N²) with VPC peering to O(N) with centralized routing.
+                        </p>
+                        
+                        <div class="project-features">
+                            <h4>Architecture Features</h4>
+                            <ul>
+                                <li>Transit Gateway hub connecting multiple VPCs</li>
+                                <li>Automatic route propagation to TGW route tables</li>
+                                <li>Dedicated TGW subnets in multiple availability zones</li>
+                                <li>Multi-AZ high availability (automatic failover)</li>
+                                <li>Transitive routing between all connected VPCs</li>
+                                <li>LocalStack testing for cost-free validation</li>
+                                <li>Infrastructure as Code with Pulumi</li>
+                            </ul>
+                        </div>
+
+                        <div class="project-tech-stack">
+                            <h4>Technologies Used</h4>
+                            <span class="tech-badge">AWS Transit Gateway</span>
+                            <span class="tech-badge">VPC</span>
+                            <span class="tech-badge">Pulumi</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">LocalStack</span>
+                        </div>
+
+                        <div class="project-learning">
+                            <h4>What I Learned</h4>
+                            <p>
+                                This project showed me how enterprise cloud networking differs from VPC peering. Understanding 
+                                transitive routing, automatic route propagation, and the scalability advantages of hub-and-spoke 
+                                architecture gave me insight into how large organizations connect dozens of VPCs. The multi-AZ 
+                                design taught me about cloud resilience patterns.
+                            </p>
+                        </div>
+
+                        <div class="project-stats">
+                            <div class="stat-item">
+                                <span class="stat-value">~24</span>
+                                <span class="stat-label">AWS Resources</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">$0.00</span>
+                                <span class="stat-label">LocalStack Testing</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">O(N)</span>
+                                <span class="stat-label">Scaling Complexity</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Site-to-Site VPN -->
+                <div class="project-detail" id="site-to-site-vpn">
+                    <div class="project-header">
+                        <div>
+                            <h3>AWS Site-to-Site VPN</h3>
+                            <p class="project-subtitle">Hybrid cloud connectivity with IPSec and BGP</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Sparty-5A/aws-site-to-site-vpn" target="_blank" class="btn btn-small">View on GitHub</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-content">
+                        <p>
+                            Built hybrid cloud VPN infrastructure connecting on-premises networks to AWS using VPN Gateway 
+                            and strongSwan. Implements dual IPSec tunnels with BGP dynamic routing for high availability 
+                            and automatic failover. Comprehensive documentation demonstrates understanding of hybrid cloud patterns.
+                        </p>
+                        
+                        <div class="project-features">
+                            <h4>Implementation Details</h4>
+                            <ul>
+                                <li>AWS VPN Gateway with dual IPSec tunnels</li>
+                                <li>strongSwan VPN on EC2 (simulated on-prem)</li>
+                                <li>BGP dynamic routing for automatic failover</li>
+                                <li>Multi-AZ architecture for resilience</li>
+                                <li>Network security with security groups and NACLs</li>
+                                <li>Traffic flow analysis and debugging</li>
+                                <li>Cost-optimized design (~$36/month)</li>
+                            </ul>
+                        </div>
+
+                        <div class="project-tech-stack">
+                            <h4>Technologies Used</h4>
+                            <span class="tech-badge">AWS VPN Gateway</span>
+                            <span class="tech-badge">IPSec</span>
+                            <span class="tech-badge">BGP</span>
+                            <span class="tech-badge">strongSwan</span>
+                            <span class="tech-badge">Pulumi</span>
+                            <span class="tech-badge">Python</span>
+                        </div>
+
+                        <div class="project-learning">
+                            <h4>What I Learned</h4>
+                            <p>
+                                This project connected my networking background with cloud infrastructure. Understanding how 
+                                IPSec tunnels work in AWS, configuring BGP for automatic failover, and troubleshooting VPN 
+                                connectivity issues gave me practical experience with hybrid cloud patterns. The documentation 
+                                process helped me understand the architecture deeply enough to explain it clearly.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IPAM System -->
+                <div class="project-detail" id="ipam">
+                    <div class="project-header">
+                        <div>
+                            <h3>Serverless IPAM System</h3>
+                            <p class="project-subtitle">IP address management with Lambda and DynamoDB</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Sparty-5A/aws-ipam-serverless" target="_blank" class="btn btn-small">View on GitHub</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-content">
+                        <p>
+                            Built IP Address Management system using serverless architecture. Handles subnet planning, 
+                            IP allocation, and conflict detection using Lambda, DynamoDB, and API Gateway. Includes 
+                            automated CI/CD pipeline with GitHub Actions and comprehensive testing with LocalStack.
+                        </p>
+                        
+                        <div class="project-features">
+                            <h4>System Features</h4>
+                            <ul>
+                                <li>Lambda functions for subnet and IP operations</li>
+                                <li>DynamoDB for scalable data storage</li>
+                                <li>API Gateway for RESTful interface</li>
+                                <li>Automated conflict detection</li>
+                                <li>CI/CD pipeline with GitHub Actions</li>
+                                <li>Unit tests and integration tests</li>
+                                <li>LocalStack for local development</li>
+                                <li>Cost: $0.60/month (well within free tier)</li>
+                            </ul>
+                        </div>
+
+                        <div class="project-tech-stack">
+                            <h4>Technologies Used</h4>
+                            <span class="tech-badge">AWS Lambda</span>
+                            <span class="tech-badge">DynamoDB</span>
+                            <span class="tech-badge">API Gateway</span>
+                            <span class="tech-badge">GitHub Actions</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">LocalStack</span>
+                        </div>
+
+                        <div class="project-learning">
+                            <h4>What I Learned</h4>
+                            <p>
+                                First serverless project taught me event-driven architecture and the Lambda programming model. 
+                                Setting up CI/CD with GitHub Actions introduced me to automated testing and deployment. Working 
+                                with DynamoDB showed me NoSQL design patterns. The LocalStack testing environment taught me 
+                                how to develop AWS applications locally without incurring costs.
+                            </p>
+                        </div>
+
+                        <div class="project-stats">
+                            <div class="stat-item">
+                                <span class="stat-value">$0.60</span>
+                                <span class="stat-label">Monthly Cost</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">100%</span>
+                                <span class="stat-label">Test Coverage</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">CI/CD</span>
+                                <span class="stat-label">Automated</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Website -->
+                <div class="project-detail" id="portfolio">
+                    <div class="project-header">
+                        <div>
+                            <h3>Portfolio Website</h3>
+                            <p class="project-subtitle">Static site hosting with S3 and CloudFront CDN</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Sparty-5A/portfolio-website" target="_blank" class="btn btn-small">View on GitHub</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-content">
+                        <p>
+                            This website! Built as a static portfolio hosted on S3 with global CDN delivery through 
+                            CloudFront. Deployed using Infrastructure as Code with Pulumi. Features dark/light theme 
+                            toggle and HTTPS encryption. Demonstrates web development skills alongside infrastructure knowledge.
+                        </p>
+                        
+                        <div class="project-features">
+                            <h4>Implementation</h4>
+                            <ul>
+                                <li>S3 static website hosting</li>
+                                <li>CloudFront CDN for global delivery</li>
+                                <li>Origin Access Control (OAC) for security</li>
+                                <li>HTTPS with AWS managed certificates</li>
+                                <li>Dark/light theme with CSS variables</li>
+                                <li>Responsive design for mobile devices</li>
+                                <li>Infrastructure as Code with Pulumi</li>
+                                <li>Cost: ~$0.50/month</li>
+                            </ul>
+                        </div>
+
+                        <div class="project-tech-stack">
+                            <h4>Technologies Used</h4>
+                            <span class="tech-badge">AWS S3</span>
+                            <span class="tech-badge">CloudFront</span>
+                            <span class="tech-badge">Pulumi</span>
+                            <span class="tech-badge">HTML/CSS/JS</span>
+                            <span class="tech-badge">Python</span>
+                        </div>
+
+                        <div class="project-learning">
+                            <h4>What I Learned</h4>
+                            <p>
+                                Building this portfolio taught me about CloudFront distribution, S3 static hosting, and 
+                                Origin Access Control. The responsive CSS and theme toggle improved my frontend skills. 
+                                Using Pulumi to deploy the infrastructure showed me how even simple websites benefit from 
+                                Infrastructure as Code for repeatability and version control.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Cost Summary -->
+            <div class="cost-summary">
+                <h2 class="section-title">Project Cost Management</h2>
+                <div class="cost-content">
+                    <p>
+                        All projects are designed with cost optimization in mind. Using LocalStack for testing, 
+                        AWS Free Tier services, and serverless architectures keeps monthly costs minimal while 
+                        providing real-world experience.
+                    </p>
+                    <div class="cost-breakdown">
+                        <div class="cost-item">
+                            <h3>IPAM System</h3>
+                            <p class="cost-amount">$0.60/month</p>
+                            <p class="cost-detail">Lambda + DynamoDB (within free tier)</p>
+                        </div>
+                        <div class="cost-item">
+                            <h3>Portfolio Website</h3>
+                            <p class="cost-amount">$0.50/month</p>
+                            <p class="cost-detail">S3 + CloudFront</p>
+                        </div>
+                        <div class="cost-item">
+                            <h3>VPN/Transit Gateway</h3>
+                            <p class="cost-amount">$0.00</p>
+                            <p class="cost-detail">LocalStack testing (destroyed after demos)</p>
+                        </div>
+                        <div class="cost-item total">
+                            <h3>Total Monthly</h3>
+                            <p class="cost-amount">~$1.10</p>
+                            <p class="cost-detail">Running production projects</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Scott Penry</h3>
+                    <p>Senior Network Engineer</p>
+                    <p>AWS Cloud Networking & DevOps</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/scott-penry-0a277829" target="_blank">LinkedIn</a>
+                        <a href="https://github.com/Sparty-5A" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Scott Penry. Built with AWS S3 + CloudFront</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

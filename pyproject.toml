@@ -1,11 +1,11 @@
 [project]
-name = "portfolio-website"
+name = "aws-portfolio-website"
 version = "1.0.0"
 description = "Professional portfolio website hosted on AWS S3 with CloudFront CDN"
 authors = [
     {name = "Scott Penry", email = "scottpenry@comcast.net"}
 ]
-requires-python = ">=3.13"
+requires-python = ">=3.12"
 dependencies = [
     "pulumi>=3.0.0",
     "pulumi-aws>=6.0.0",
@@ -19,16 +19,24 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/Sparty-5A/portfolio-website"
-Repository = "https://github.com/Sparty-5A/portfolio-website"
+Homepage = "https://github.com/Sparty-5A/aws-portfolio-website"
+Repository = "https://github.com/Sparty-5A/aws-portfolio-website"
 
 [build-system]
 requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
+[tool.setuptools]
+# Explicitly include only the infrastructure package
+packages = ["infrastructure"]
+
+[tool.setuptools.package-data]
+# Don't include website/ as a Python package
+"*" = []
+
 [tool.black]
 line-length = 100
-target-version = ['py38', 'py39', 'py310', 'py311', 'py312', 'py313']
+target-version = ['py310', 'py311', 'py312', 'py313']
 
 [tool.ruff]
 line-length = 100
@@ -38,3 +46,10 @@ target-version = "py313"
 testpaths = ["tests"]
 python_files = "test_*.py"
 python_functions = "test_*"
+
+[dependency-groups]
+dev = [
+    "black>=24.8.0",
+    "pytest>=8.3.5",
+    "ruff>=0.14.8",
+]

@@ -8,6 +8,8 @@ venv/
 Pulumi.*.yaml
 !Pulumi.yaml
 
+docs/*.md
+
 # Python
 *.py[cod]
 *$py.class

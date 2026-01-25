@@ -56,13 +56,13 @@ S3 Bucket (Private)
 
 - AWS account with credentials configured
 - Pulumi CLI installed
-- Python 3.8+
+- Python 3.13+
 
 ### Deploy Infrastructure
 
 ```bash
 # Clone repository
-git clone https://github.com/Sparty-5A/portfolio-website.git
+git clone https://github.com/Sparty-5A/aws-portfolio-website.git
 cd portfolio-website
 
 # Install dependencies
@@ -370,7 +370,7 @@ Contributions, issues, and feature requests are welcome!
 **Scott Penry**
 - GitHub: [@Sparty-5A](https://github.com/Sparty-5A)
 - LinkedIn: [scott-penry-0a277829](https://linkedin.com/in/scott-penry-0a277829)
-- Website: [Your CloudFront URL]
+- Website: [CloudFront URL](https://d7i4z01k04a36.cloudfront.net/)
 
 ---
 

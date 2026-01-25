@@ -95,59 +95,6 @@
                     </div>
                 </div>
 
-                <!-- Nokia SROS -->
-                <div class="project-detail" id="nokia-sros">
-                    <div class="project-header">
-                        <div>
-                            <h3>Nokia SROS Infrastructure as Code</h3>
-                            <p class="project-subtitle">9-layer orchestration framework for Nokia SROS devices</p>
-                        </div>
-                        <div class="project-links">
-                            <span class="badge-private">Private Repository</span>
-                        </div>
-                    </div>
-                    
-                    <div class="project-content">
-                        <p>
-                            Developed a comprehensive Infrastructure as Code framework for Nokia SROS (Service Router Operating System) 
-                            devices using Python and NETCONF. The 9-layer architecture provides production-grade features including 
-                            confirmed commits, reconciliation engine, and comprehensive audit trails.
-                        </p>
-                        
-                        <div class="project-features">
-                            <h4>Architecture Highlights</h4>
-                            <ul>
-                                <li>9-layer modular architecture</li>
-                                <li>NETCONF protocol with confirmed commits</li>
-                                <li>Configuration reconciliation and drift detection</li>
-                                <li>Comprehensive audit logging</li>
-                                <li>Pydantic-based configuration validation</li>
-                                <li>Error handling and rollback mechanisms</li>
-                                <li>Support for complex network services</li>
-                            </ul>
-                        </div>
-
-                        <div class="project-tech-stack">
-                            <h4>Technologies Used</h4>
-                            <span class="tech-badge">Python</span>
-                            <span class="tech-badge">NETCONF</span>
-                            <span class="tech-badge">Nokia SROS</span>
-                            <span class="tech-badge">Pydantic</span>
-                            <span class="tech-badge">XML/XPath</span>
-                        </div>
-
-                        <div class="project-learning">
-                            <h4>What I Learned</h4>
-                            <p>
-                                This project taught me how to build production-grade automation that's reliable enough for 
-                                critical infrastructure. Working with NETCONF's confirmed commit feature and building proper 
-                                reconciliation logic showed me the complexity required for enterprise network automation. 
-                                The layered architecture demonstrates separation of concerns and maintainability.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
             </div>
 
             <!-- AWS Cloud Projects -->
@@ -322,9 +269,9 @@
                         <div class="project-learning">
                             <h4>What I Learned</h4>
                             <p>
-                                First serverless project taught me event-driven architecture and the Lambda programming model. 
-                                Setting up CI/CD with GitHub Actions introduced me to automated testing and deployment. Working 
-                                with DynamoDB showed me NoSQL design patterns. The LocalStack testing environment taught me 
+                                First serverless project taught me event-driven architecture and the Lambda programming model.
+                                Setting up CI/CD with GitHub Actions introduced me to automated testing and deployment. Working
+                                with DynamoDB showed me NoSQL design patterns. The LocalStack testing environment taught me
                                 how to develop AWS applications locally without incurring costs.
                             </p>
                         </div>
@@ -357,14 +304,14 @@
                             <a href="https://github.com/Sparty-5A/portfolio-website" target="_blank" class="btn btn-small">View on GitHub</a>
                         </div>
                     </div>
-                    
+
                     <div class="project-content">
                         <p>
-                            This website! Built as a static portfolio hosted on S3 with global CDN delivery through 
-                            CloudFront. Deployed using Infrastructure as Code with Pulumi. Features dark/light theme 
+                            This website! Built as a static portfolio hosted on S3 with global CDN delivery through
+                            CloudFront. Deployed using Infrastructure as Code with Pulumi. Features dark/light theme
                             toggle and HTTPS encryption. Demonstrates web development skills alongside infrastructure knowledge.
                         </p>
-                        
+
                         <div class="project-features">
                             <h4>Implementation</h4>
                             <ul>
@@ -391,10 +338,322 @@
                         <div class="project-learning">
                             <h4>What I Learned</h4>
                             <p>
-                                Building this portfolio taught me about CloudFront distribution, S3 static hosting, and 
-                                Origin Access Control. The responsive CSS and theme toggle improved my frontend skills. 
-                                Using Pulumi to deploy the infrastructure showed me how even simple websites benefit from 
+                                Building this portfolio taught me about CloudFront distribution, S3 static hosting, and
+                                Origin Access Control. The responsive CSS and theme toggle improved my frontend skills.
+                                Using Pulumi to deploy the infrastructure showed me how even simple websites benefit from
                                 Infrastructure as Code for repeatability and version control.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI Text Summarizer -->
+                <div class="project-detail" id="ai-summarizer">
+                    <div class="project-header">
+                        <div>
+                            <h3>AI Document Summarizer</h3>
+                            <p class="project-subtitle">Serverless document summarization using OpenAI GPT-3.5-turbo</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Sparty-5A/aws-ai-text-summarizer" target="_blank" class="btn btn-small">View on GitHub</a>
+                            <span class="project-status complete">✅ Fully Operational</span>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <p>
+                            Serverless document summarization service using OpenAI GPT-3.5-turbo for AI-powered text analysis.
+                            Features user-configurable summary lengths (brief, standard, detailed, comprehensive) with dynamic
+                            prompt engineering. Implements comprehensive property-based testing using the Hypothesis framework
+                            with over 1,100 automatically generated test cases covering edge cases and boundary conditions.
+                        </p>
+
+                        <div class="project-features">
+                            <h4>Key Features</h4>
+                            <ul>
+                                <li>PDF and text file processing with PyPDF2</li>
+                                <li>User-configurable summary lengths with adaptive prompts</li>
+                                <li>Property-based testing with Hypothesis (1,100+ test cases)</li>
+                                <li>Comprehensive input validation and error handling</li>
+                                <li>Responsive web interface with drag-and-drop upload</li>
+                                <li>Real-time summary display with text statistics</li>
+                                <li>Direct processing (no S3/DynamoDB storage complexity)</li>
+                                <li>Cost-optimized: ~$1/month for moderate use</li>
+                            </ul>
+                        </div>
+
+                        <div class="project-tech-stack">
+                            <h4>Technologies Used</h4>
+                            <span class="tech-badge">AWS Lambda</span>
+                            <span class="tech-badge">API Gateway</span>
+                            <span class="tech-badge">OpenAI API</span>
+                            <span class="tech-badge">Pulumi</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Hypothesis</span>
+                        </div>
+
+                        <div class="project-learning">
+                            <h4>What I Learned</h4>
+                            <p>
+                                This project taught me OpenAI API integration, prompt engineering for optimal AI responses,
+                                and the power of property-based testing. The Hypothesis framework automatically generated edge
+                                cases I hadn't considered, catching bugs before deployment. Implementing configurable summary
+                                lengths required dynamic prompt construction. The serverless architecture demonstrates
+                                cost-effective AI integration without infrastructure overhead.
+                            </p>
+                        </div>
+
+                        <div class="project-stats">
+                            <div class="stat-item">
+                                <span class="stat-value">1,100+</span>
+                                <span class="stat-label">Test Cases</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">4</span>
+                                <span class="stat-label">Summary Lengths</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">~$1</span>
+                                <span class="stat-label">Monthly Cost</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Datacenter Migration -->
+                <div class="project-detail" id="datacenter-migration">
+                    <div class="project-header">
+                        <div>
+                            <h3>Multi-Site Datacenter Migration to AWS</h3>
+                            <p class="project-subtitle">Hybrid cloud architecture with Transit Gateway and Site-to-Site VPN</p>
+                        </div>
+                        <div class="project-links">
+                            <span class="badge-private">Private Repository</span>
+                            <span class="badge-conceptual">Conceptual Architecture</span>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <p>
+                            Architected comprehensive multi-site datacenter migration plan to AWS using Transit Gateway and
+                            Site-to-Site VPN. Designed phase-based deployment strategy with detailed planning for risk
+                            minimization and business continuity. Created hybrid cloud architecture blueprint connecting
+                            on-premises infrastructure to AWS VPCs with Infrastructure as Code templates for repeatable deployments.
+                        </p>
+
+                        <div class="project-note">
+                            <p><strong>Project Scope:</strong> Conceptual architecture and Phase 1 (infrastructure setup) completed.
+                            Subsequent migration phases (Phase 2-4: application migration, data transfer, cutover) not implemented
+                            due to lack of production infrastructure for realistic testing. Demonstrates migration planning,
+                            architecture design, and hybrid connectivity patterns applicable to real enterprise migrations.</p>
+                        </div>
+
+                        <div class="project-features">
+                            <h4>Architecture Components</h4>
+                            <ul>
+                                <li>Transit Gateway hub-and-spoke design</li>
+                                <li>Site-to-Site VPN for on-premises connectivity</li>
+                                <li>Multi-VPC network segmentation</li>
+                                <li>Phased migration strategy with rollback plans</li>
+                                <li>Cost optimization analysis and modeling</li>
+                                <li>Infrastructure as Code with Pulumi</li>
+                                <li>Security architecture (IAM, Security Groups, NACLs)</li>
+
+                <!-- ECS Fargate Secure Application -->
+                <div class="project-detail" id="ecs-fargate">
+                    <div class="project-header">
+                        <div>
+                            <h3>Secure ECS Fargate Application</h3>
+                            <p class="project-subtitle">Production-grade containerized application with security best practices</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Sparty-5A/aws-ecs-fargate-secure" target="_blank" class="btn btn-small">View on GitHub</a>
+                            <span class="project-status complete">✅ Deployed & Tested</span>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <p>
+                            Security-hardened containerized application deployment using ECS Fargate with production-grade
+                            architecture. Implements private subnets with VPC endpoints (eliminating NAT Gateway costs),
+                            Secrets Manager for credential management, Multi-AZ RDS PostgreSQL, and auto-scaling.
+                            Demonstrates container orchestration with comprehensive security controls.
+                        </p>
+
+                        <div class="project-features">
+                            <h4>Architecture Highlights</h4>
+                            <ul>
+                                <li>ECS Fargate tasks in private subnets (no public IPs)</li>
+                                <li>VPC endpoints for AWS services (ECR, Secrets Manager, CloudWatch)</li>
+                                <li>Secrets Manager integration (no hardcoded credentials)</li>
+                                <li>Multi-AZ RDS PostgreSQL with encryption at rest</li>
+                                <li>Application Load Balancer with health checks</li>
+                                <li>Auto-scaling (2-4 tasks based on CPU utilization)</li>
+                                <li>IAM roles following least-privilege principles</li>
+                                <li>CloudWatch Logs and VPC Flow Logs for monitoring</li>
+                            </ul>
+                        </div>
+
+                        <div class="project-security">
+                            <h4>Security Features</h4>
+                            <ul>
+                                <li><strong>Network Security:</strong> Private subnets only, security groups with least privilege, VPC Flow Logs</li>
+                                <li><strong>IAM Security:</strong> Task execution role and task role separation, no hardcoded credentials</li>
+                                <li><strong>Data Security:</strong> RDS encryption at rest (KMS), encryption in transit (SSL), automated backups</li>
+                                <li><strong>Container Security:</strong> ECR image scanning, non-root user, resource limits</li>
+                            </ul>
+                        </div>
+
+                        <div class="project-tech-stack">
+                            <h4>Technologies Used</h4>
+                            <span class="tech-badge">ECS Fargate</span>
+                            <span class="tech-badge">Docker</span>
+                            <span class="tech-badge">RDS PostgreSQL</span>
+                            <span class="tech-badge">Secrets Manager</span>
+                            <span class="tech-badge">ALB</span>
+                            <span class="tech-badge">Pulumi</span>
+                            <span class="tech-badge">Python</span>
+                        </div>
+
+                        <div class="project-learning">
+                            <h4>What I Learned</h4>
+                            <p>
+                                This project taught me containerized application deployment at scale with security as
+                                the primary focus. Using VPC endpoints instead of NAT Gateway demonstrated cost optimization
+                                while maintaining security. The separation of task execution roles (infrastructure permissions)
+                                from task roles (application permissions) showed proper IAM design. Multi-AZ RDS deployment
+                                with automated backups demonstrated high availability patterns. The project bridges traditional
+                                infrastructure knowledge with modern container orchestration.
+                            </p>
+                        </div>
+
+                        <div class="project-stats">
+                            <div class="stat-item">
+                                <span class="stat-value">$119</span>
+                                <span class="stat-label">Monthly Cost</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">Multi-AZ</span>
+                                <span class="stat-label">High Availability</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">2-4</span>
+                                <span class="stat-label">Auto-Scaling Tasks</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AWS Security Deep Dive -->
+                <div class="project-detail" id="security-architecture">
+                    <div class="project-header">
+                        <div>
+                            <h3>Enterprise AWS Security Architecture</h3>
+                            <p class="project-subtitle">Defense-in-depth security with Network ACLs, Security Groups, and IAM</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Sparty-5A/aws-security-deep-dive" target="_blank" class="btn btn-small">View on GitHub</a>
+                            <span class="project-status complete">✅ Deployed & Tested</span>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <p>
+                            Enterprise-grade AWS security architecture implementing defense-in-depth principles with
+                            multiple security layers. Demonstrates Network ACLs (stateless subnet-level firewall),
+                            Security Groups (stateful instance-level firewall), IAM least-privilege roles, VPC Flow Logs
+                            for traffic analysis, and CloudWatch monitoring. Follows AWS Well-Architected Framework
+                            security pillar best practices.
+                        </p>
+
+                        <div class="project-features">
+                            <h4>Security Layers Implemented</h4>
+                            <ul>
+                                <li><strong>Layer 1 - Network ACLs:</strong> Stateless subnet-level firewall with explicit allow/deny rules</li>
+                                <li><strong>Layer 2 - Security Groups:</strong> Stateful instance-level firewall with tiered architecture</li>
+                                <li><strong>Layer 3 - IAM Roles:</strong> Least-privilege access control, service-specific permissions</li>
+                                <li><strong>Layer 4 - Monitoring:</strong> VPC Flow Logs, CloudWatch dashboards, EventBridge alerting</li>
+                                <li>Multi-tier architecture: Bastion, Web, Application, Database tiers</li>
+                                <li>Network segmentation: Public and private subnets across 3 availability zones</li>
+                                <li>S3 server-side encryption at rest (AES-256)</li>
+                                <li>Zero Trust principles: Deny-by-default, explicit allow rules</li>
+                            </ul>
+                        </div>
+
+                        <div class="project-security">
+                            <h4>Security Group Tiers</h4>
+                            <ul>
+                                <li><strong>Bastion Tier:</strong> SSH jump host, SSM Session Manager (recommended over SSH)</li>
+                                <li><strong>Web Tier:</strong> HTTP/HTTPS from internet, SSH from bastion only</li>
+                                <li><strong>Application Tier:</strong> Port 8080 from web tier, SSH from bastion only</li>
+                                <li><strong>Database Tier:</strong> PostgreSQL/MySQL from app tier, SSH from bastion only</li>
+                            </ul>
+                        </div>
+
+                        <div class="project-tech-stack">
+                            <h4>Technologies Used</h4>
+                            <span class="tech-badge">VPC</span>
+                            <span class="tech-badge">Security Groups</span>
+                            <span class="tech-badge">Network ACLs</span>
+                            <span class="tech-badge">IAM</span>
+                            <span class="tech-badge">VPC Flow Logs</span>
+                            <span class="tech-badge">CloudWatch</span>
+                            <span class="tech-badge">Pulumi</span>
+                            <span class="tech-badge">Python</span>
+                        </div>
+
+                        <div class="project-learning">
+                            <h4>What I Learned</h4>
+                            <p>
+                                This project deepened my understanding of AWS security beyond basic configurations.
+                                Implementing both Network ACLs (stateless) and Security Groups (stateful) showed the
+                                importance of defense-in-depth—multiple security layers providing redundancy if one fails.
+                                The distinction between subnet-level and instance-level firewalls became clear through
+                                practical implementation. IAM role design for each tier (bastion, web, app, database)
+                                demonstrated least-privilege access patterns. VPC Flow Logs analysis revealed network
+                                traffic patterns useful for troubleshooting and security auditing. This architecture
+                                aligns with AWS Well-Architected Framework and enterprise security requirements.
+                            </p>
+                        </div>
+
+                        <div class="project-stats">
+                            <div class="stat-item">
+                                <span class="stat-value">4</span>
+                                <span class="stat-label">Security Layers</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">Multi-AZ</span>
+                                <span class="stat-label">3 Availability Zones</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">~$35</span>
+                                <span class="stat-label">Monthly Cost</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+                        </div>
+
+                        <div class="project-tech-stack">
+                            <h4>Technologies Used</h4>
+                            <span class="tech-badge">AWS Transit Gateway</span>
+                            <span class="tech-badge">Site-to-Site VPN</span>
+                            <span class="tech-badge">VPC</span>
+                            <span class="tech-badge">Pulumi</span>
+                            <span class="tech-badge">Python</span>
+                        </div>
+
+                        <div class="project-learning">
+                            <h4>What I Learned</h4>
+                            <p>
+                                This project taught me enterprise migration planning, phase-based deployment strategies, and
+                                the complexities of hybrid cloud architecture. Designing connectivity between on-premises and
+                                AWS requires understanding both traditional networking (BGP, IPSec) and cloud networking
+                                (Transit Gateway, route propagation). The planning process highlighted risk management,
+                                business continuity, and cost modeling essential for real-world migrations.
                             </p>
                         </div>
                     </div>
@@ -402,13 +661,140 @@
 
             </div>
 
+            <!-- Infrastructure as Code: Pulumi vs Terraform -->
+            <div class="iac-explanation">
+                <h2 class="section-title">Infrastructure as Code: Pulumi vs Terraform</h2>
+
+                <p>
+                    All AWS projects in this portfolio are deployed using <strong>Pulumi</strong> with Python.
+                    While Terraform is the industry standard and widely adopted, Pulumi offers several advantages
+                    that made it my choice for learning and personal projects. That said, I'm tool-agnostic and
+                    ready to use Terraform if that's what the team or organization prefers.
+                </p>
+
+                <div class="comparison-grid">
+                    <div class="comparison-card">
+                        <h4>Why I Chose Pulumi</h4>
+                        <p>
+                            <strong>Use Real Programming Languages:</strong> Pulumi uses Python, TypeScript, Go, or C#
+                            instead of HCL. This means I can use familiar programming constructs (loops, conditionals,
+                            functions), leverage existing libraries, and apply software engineering best practices.
+                            For network engineers learning DevOps, using Python for both automation scripts and
+                            infrastructure deployment creates consistency and reduces the learning curve.
+                        </p>
+                    </div>
+
+                    <div class="comparison-card">
+                        <h4>Native Language Features</h4>
+                        <p>
+                            <strong>Real Programming Power:</strong> Need to process a list of subnets dynamically?
+                            In Pulumi, I use Python's list comprehensions and standard library. Need to make an API
+                            call during deployment? Import the requests library. Terraform requires custom providers
+                            or complex workarounds for similar tasks. Pulumi feels natural to developers and scripters.
+                        </p>
+                    </div>
+
+                    <div class="comparison-card">
+                        <h4>Excellent IDE Support</h4>
+                        <p>
+                            <strong>Better Developer Experience:</strong> Because Pulumi uses real programming languages,
+                            I get full IDE support: autocomplete, type checking, inline documentation, and immediate
+                            error detection. Writing infrastructure code feels like writing any other Python application,
+                            with IntelliSense helping discover available resources and their properties.
+                        </p>
+                    </div>
+
+                    <div class="comparison-card">
+                        <h4>Testing Flexibility</h4>
+                        <p>
+                            <strong>Unit and Integration Testing:</strong> Pulumi integrates with standard testing
+                            frameworks (pytest, unittest). I can test infrastructure logic before deployment, mock
+                            resources, and validate configurations. This project's Hypothesis testing (1,100+ test cases)
+                            demonstrates the testing capabilities available when using real programming languages.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="iac-comparison-table">
+                    <h4>Quick Comparison</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Feature</th>
+                                <th>Pulumi</th>
+                                <th>Terraform</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Language</td>
+                                <td>Python, TypeScript, Go, C#</td>
+                                <td>HCL (HashiCorp Configuration Language)</td>
+                            </tr>
+                            <tr>
+                                <td>Learning Curve</td>
+                                <td>Lower (if you know Python)</td>
+                                <td>Learn new syntax (HCL)</td>
+                            </tr>
+                            <tr>
+                                <td>IDE Support</td>
+                                <td>Full IntelliSense, autocomplete</td>
+                                <td>Basic (HCL language server)</td>
+                            </tr>
+                            <tr>
+                                <td>Testing</td>
+                                <td>pytest, unittest, standard frameworks</td>
+                                <td>Terratest, custom testing</td>
+                            </tr>
+                            <tr>
+                                <td>Maturity</td>
+                                <td>Newer (2018)</td>
+                                <td>Established (2014)</td>
+                            </tr>
+                            <tr>
+                                <td>Adoption</td>
+                                <td>Growing</td>
+                                <td>Industry Standard</td>
+                            </tr>
+                            <tr>
+                                <td>Provider Ecosystem</td>
+                                <td>Good (100+ providers)</td>
+                                <td>Excellent (1000+ providers)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="iac-note">
+                    <p>
+                        <strong>The Bottom Line:</strong> Pulumi was the right choice for my learning journey
+                        because it leverages Python skills I already have and aligns with network automation
+                        patterns (Python scripts, NETCONF, API integration). The programming-language approach
+                        made Infrastructure as Code feel familiar rather than learning yet another DSL.
+                    </p>
+                    <p>
+                        <strong>In a Professional Setting:</strong> If a team or company is already using Terraform,
+                        I'm absolutely comfortable using it. The concepts (state management, providers, resources,
+                        modules) are identical—only the syntax differs. Learning Terraform's HCL is straightforward
+                        when you understand IaC principles. The tool matters less than the methodology, and I'm
+                        tool-agnostic in professional environments.
+                    </p>
+                    <p>
+                        <strong>My Approach:</strong> Use the best tool for the job and the team. Pulumi for
+                        personal projects where Python integration adds value. Terraform where it's the standard.
+                        Both are excellent tools, and proficiency with either demonstrates understanding of modern
+                        infrastructure practices.
+                    </p>
+                </div>
+            </div>
+
             <!-- Cost Summary -->
             <div class="cost-summary">
                 <h2 class="section-title">Project Cost Management</h2>
                 <div class="cost-content">
                     <p>
-                        All projects are designed with cost optimization in mind. Using LocalStack for testing, 
-                        AWS Free Tier services, and serverless architectures keeps monthly costs minimal while 
+                        All projects are designed with cost optimization in mind. Using LocalStack for testing,
+                        AWS Free Tier services, and serverless architectures keeps monthly costs minimal while
                         providing real-world experience.
                     </p>
                     <div class="cost-breakdown">

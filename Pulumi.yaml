@@ -1,6 +1,6 @@
-name: portfolio-website
+name: aws-portfolio-website
 runtime:
   name: python
   options:
-    virtualenv: venv
+    virtualenv: .venv
 description: Professional portfolio website hosted on AWS S3 with CloudFront CDN

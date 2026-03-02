@@ -37,11 +37,11 @@
     <!-- Projects Section -->
     <section class="projects-section">
         <div class="container">
-            
+
             <!-- Network Automation Projects -->
             <div class="project-category">
                 <h2 class="category-title">Network Automation</h2>
-                
+
                 <!-- Cisco NSO -->
                 <div class="project-detail" id="cisco-nso">
                     <div class="project-header">
@@ -53,14 +53,14 @@
                             <a href="https://github.com/Sparty-5A/cisco-nso-orchestration" target="_blank" class="btn btn-small">View on GitHub</a>
                         </div>
                     </div>
-                    
+
                     <div class="project-content">
                         <p>
-                            Built a production-grade orchestration framework leveraging Cisco NSO (Network Services Orchestrator) 
-                            to manage multi-vendor network devices. The framework supports Cisco IOS-XE, IOS-XR, and NX-OS platforms, 
+                            Built a production-grade orchestration framework leveraging Cisco NSO (Network Services Orchestrator)
+                            to manage multi-vendor network devices. The framework supports Cisco IOS-XE, IOS-XR, and NX-OS platforms,
                             providing intent-based configuration and reconciliation capabilities.
                         </p>
-                        
+
                         <div class="project-features">
                             <h4>Key Features</h4>
                             <ul>
@@ -86,11 +86,267 @@
                         <div class="project-learning">
                             <h4>What I Learned</h4>
                             <p>
-                                This project deepened my understanding of network automation beyond simple scripting. 
-                                Working with NSO taught me about intent-based networking, service modeling, and the 
-                                importance of reconciliation in production environments. The RESTCONF API integration 
+                                This project deepened my understanding of network automation beyond simple scripting.
+                                Working with NSO taught me about intent-based networking, service modeling, and the
+                                importance of reconciliation in production environments. The RESTCONF API integration
                                 showed me how modern network management can follow DevOps principles.
                             </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nokia SROS -->
+                <div class="project-detail" id="nokia-sros">
+                    <div class="project-header">
+                        <div>
+                            <h3>Nokia SROS Network Orchestration</h3>
+                            <p class="project-subtitle">Production-grade 9-layer orchestration framework for Nokia SROS routers</p>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <p>
+                            Production-grade Infrastructure as Code framework specifically for Nokia SROS routers with
+                            enterprise-level orchestration capabilities. The 9-layer architecture provides validation,
+                            templating, NETCONF communication, reconciliation, auditing, configuration management,
+                            error handling, change tracking, and compliance logging.
+                        </p>
+
+                        <div class="project-features">
+                            <h4>Key Features</h4>
+                            <ul>
+                                <li><strong>9-Layer Architecture Framework:</strong> Validation, templating, NETCONF communication,
+                                    reconciliation engine, auditing, configuration management, error handling, change tracking,
+                                    and compliance logging</li>
+                                <li><strong>Production-Safe Deployments:</strong> Confirmed commits with automatic rollback on
+                                    failure, pre/post-deployment validation and verification</li>
+                                <li><strong>Comprehensive Audit & Compliance:</strong> Detailed audit logging, change tracking
+                                    for troubleshooting, configuration version control, compliance reporting</li>
+                                <li><strong>NETCONF Protocol Integration:</strong> Native NETCONF communication, efficient
+                                    configuration management, state reconciliation, configuration drift detection</li>
+                            </ul>
+                        </div>
+
+                        <div class="project-tech-stack">
+                            <h4>Technologies Used</h4>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Nokia SROS</span>
+                            <span class="tech-badge">NETCONF</span>
+                            <span class="tech-badge">Jinja2</span>
+                            <span class="tech-badge">Infrastructure as Code</span>
+                            <span class="tech-badge">Orchestration</span>
+                        </div>
+
+                        <div class="project-learning">
+                            <h4>What I Learned</h4>
+                            <p>
+                                Nokia SROS-specific automation patterns, NETCONF protocol implementation,
+                                production-safe deployment strategies, reconciliation and drift detection,
+                                enterprise network orchestration. This project taught me how to build production-grade
+                                automation that's reliable enough for critical infrastructure managing large-scale
+                                router deployments.
+                            </p>
+                        </div>
+
+                        <div class="project-note" style="background-color: #f8f9fa; border-left: 4px solid #6c757d; padding: 15px; margin-top: 20px; border-radius: 4px;">
+                            <p style="margin: 0; font-size: 0.9em; color: #6c757d; font-style: italic;">
+                                <strong>Note:</strong> This project represents professional work and is not publicly available.
+                                Architecture overview and technical discussion available during interviews.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VxLAN EVPN -->
+                <div class="project-detail" id="vxlan-evpn">
+                    <div class="project-header">
+                        <div>
+                            <h3>VxLAN EVPN Spine-Leaf Fabric</h3>
+                            <p class="project-subtitle">Production-style data center fabric with Python IaC automation on Cisco Nexus 9000</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Sparty-5A/nexus-vxlan-evpn" target="_blank" class="btn btn-small">View on GitHub</a>
+                            <span class="project-status complete">&#x2705; Deployed &amp; Verified</span>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <p>
+                            Full VxLAN EVPN spine-leaf fabric deployed and verified end-to-end in Cisco's DevNet Nexus
+                            Dashboard sandbox using Nexus 9000v hardware running NX-OS 10.6. Covers the complete stack:
+                            OSPF underlay, BGP EVPN overlay with spine route reflectors, multi-tenant VRFs, anycast
+                            distributed gateway, ARP suppression, and PIM sparse-mode multicast for BUM traffic.
+                            Includes a Python IaC framework that automates VRF and network deployment against the NDFC
+                            REST API with idempotent plan/apply and state tracking.
+                        </p>
+
+                        <div class="project-features">
+                            <h4>Fabric Architecture</h4>
+                            <ul>
+                                <li><strong>Underlay:</strong> OSPF point-to-point /31 links, MTU 9216 throughout, loopback-based router IDs</li>
+                                <li><strong>Overlay:</strong> BGP EVPN ASN 65001, two spines as route reflectors with cluster-id for redundancy</li>
+                                <li><strong>BUM handling:</strong> PIM sparse-mode multicast with anycast RP — scales better than ingress replication</li>
+                                <li><strong>Multi-tenancy:</strong> PRODUCTION and DEV VRFs with dedicated L3 VNIs (50001/50002)</li>
+                                <li><strong>L2 networks:</strong> Four VNIs (Web, Database, App, Dev) with ARP suppression active on all</li>
+                                <li><strong>Gateway model:</strong> Anycast — identical IP and MAC on every leaf for optimal local routing</li>
+                                <li><strong>Data plane verified:</strong> Cross-VTEP pings confirmed, NVE peers showing CP (control plane) learning</li>
+                                <li><strong>DCI:</strong> Border Gateway config on spines, Site 2 fabric in progress</li>
+                            </ul>
+                        </div>
+
+                        <div class="project-features">
+                            <h4>Python IaC Framework — NDFC REST API</h4>
+                            <ul>
+                                <li>Declarative YAML desired state — define VRFs and Networks, tool handles create/attach/deploy</li>
+                                <li>Full three-step NDFC lifecycle per resource: create definition → attach to leaf switches → deploy to hardware</li>
+                                <li>Dynamic leaf serial number fetching — handles new serial numbers on every sandbox reservation</li>
+                                <li>Idempotent plan/apply — confirmed clean after sync against a correctly deployed fabric</li>
+                                <li>Correct lanAttachList payload structure with all required fields (learned through 500 errors)</li>
+                                <li>Sync correctly parses NDFC's nested JSON-in-string templateConfig fields for accurate diff</li>
+                            </ul>
+                        </div>
+
+                        <div class="project-features">
+                            <h4>Notable Troubleshooting (7 issues documented)</h4>
+                            <ul>
+                                <li><strong>TCAM carving:</strong> ARP suppression requires arp-ether TCAM region pre-allocated. Region defaulted
+                                    to size 0 — reduced racl from 1536 to 1024 (must be multiples of 512), allocated 256 to arp-ether, reloaded.
+                                    Production lesson: TCAM planning must happen before fabric onboarding, not after.</li>
+                                <li><strong>NDFC API payload structure:</strong> VRF attach required lanAttachList wrapper with switch serial
+                                    numbers and four required fields — 500 errors until correct structure was identified from the OpenAPI spec.</li>
+                                <li><strong>templateConfig parsing:</strong> NDFC embeds vlanId, gateway, and suppressArp as a serialized JSON
+                                    string inside the API response — sync produced false positives on plan until parsed correctly.</li>
+                            </ul>
+                        </div>
+
+                        <div class="project-tech-stack">
+                            <h4>Technologies Used</h4>
+                            <span class="tech-badge">Cisco NX-OS</span>
+                            <span class="tech-badge">NDFC 12.x</span>
+                            <span class="tech-badge">BGP EVPN</span>
+                            <span class="tech-badge">VxLAN</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">REST API</span>
+                            <span class="tech-badge">Infrastructure as Code</span>
+                        </div>
+
+                        <div class="project-learning">
+                            <h4>What I Learned</h4>
+                            <p>
+                                This project connected my SP networking background directly to data center fabric design.
+                                The VxLAN EVPN control plane maps directly to MP-BGP VPN concepts I knew from production —
+                                L3 VNIs are the VPN label, VTEP loopbacks are PE loopbacks, spines are P routers, and
+                                RT/RD mechanisms are identical. Building the IaC framework against a real vendor API
+                                taught me how controllers like NDFC abstract hardware configuration and how to reverse-engineer
+                                underdocumented API behavior through systematic debugging.
+                            </p>
+                        </div>
+
+                        <div class="project-stats">
+                            <div class="stat-item">
+                                <span class="stat-value">9</span>
+                                <span class="stat-label">Devices</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">7</span>
+                                <span class="stat-label">Issues Documented</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">2-Site</span>
+                                <span class="stat-label">DCI In Progress</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cisco Meraki -->
+                <div class="project-detail" id="meraki">
+                    <div class="project-header">
+                        <div>
+                            <h3>Cisco Meraki Network Orchestration</h3>
+                            <p class="project-subtitle">Enterprise automation suite covering disaster recovery, multi-site management, monitoring, and zero-trust security</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Sparty-5A/meraki-orchestration" target="_blank" class="btn btn-small">View on GitHub</a>
+                            <span class="project-status complete">&#x2705; Deployed &amp; Tested</span>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <p>
+                            Production-grade automation suite for Cisco Meraki infrastructure built on the Meraki
+                            Dashboard API and Python SDK. Covers the full operational lifecycle: automated configuration
+                            backup and disaster recovery, multi-site template deployment, continuous network health
+                            monitoring, zero-trust security segmentation, and switch port automation. Developed and
+                            tested against the Cisco DevNet Meraki sandbox.
+                        </p>
+
+                        <div class="project-features">
+                            <h4>Feature Modules (15+ scripts)</h4>
+                            <ul>
+                                <li><strong>Disaster Recovery:</strong> Automated full-network backup to timestamped JSON — VLANs,
+                                    firewall rules, SSIDs, switch ports, group policies. Intelligent filtering handles Meraki's
+                                    auto-generated rules during restore. One-command restoration of entire network configuration.</li>
+                                <li><strong>Change Tracking:</strong> Backup comparison tool identifies configuration drift between
+                                    any two snapshots — useful for pre/post-change auditing and compliance documentation.</li>
+                                <li><strong>Multi-Site Management:</strong> Configuration templates deployed consistently across
+                                    branch sites. Automated compliance verification confirms all sites match the template standard.</li>
+                                <li><strong>Network Monitoring:</strong> Health checks covering device status, latency/packet loss,
+                                    client tracking by SSID/VLAN, switch PoE status, and VLAN segmentation validation.
+                                    Designed for cron-based automated monitoring.</li>
+                                <li><strong>Zero-Trust Security:</strong> Group policies with bandwidth limits, scheduled access
+                                    windows, and per-user firewall rules. Executive, Employee, Contractor, and Guest tiers with
+                                    deny-by-default segmentation.</li>
+                                <li><strong>Switch Automation:</strong> Bulk port configuration — workstation ports (data + voice
+                                    VLAN + PoE), IoT isolation, guest access, trunk uplinks. Configures 100+ ports programmatically.</li>
+                            </ul>
+                        </div>
+
+                        <div class="project-features">
+                            <h4>Network Topology Automated</h4>
+                            <ul>
+                                <li>Four VLANs: Corporate (full access), Guest (internet only), IoT (isolated), Voice (QoS)</li>
+                                <li>Four SSIDs mapped to VLANs: Corporate WPA2, Guest open, IoT WPA2, Voice WPA2</li>
+                                <li>Ten firewall rules with zero-trust segmentation between segments</li>
+                                <li>Switch ports 1-22 configured by role: workstations, IoT, guest, trunk uplinks</li>
+                            </ul>
+                        </div>
+
+                        <div class="project-tech-stack">
+                            <h4>Technologies Used</h4>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Meraki Dashboard API</span>
+                            <span class="tech-badge">Meraki SDK</span>
+                            <span class="tech-badge">REST APIs</span>
+                            <span class="tech-badge">Network Automation</span>
+                        </div>
+
+                        <div class="project-learning">
+                            <h4>What I Learned</h4>
+                            <p>
+                                Meraki's API-first design made it an ideal platform for learning enterprise network automation
+                                patterns. The Dashboard API exposes every configuration element as a REST resource, which
+                                reinforced the principle that modern network management is fundamentally software integration.
+                                Building the disaster recovery system taught me to think about operational resilience beyond
+                                just backups — intelligent filtering, restore validation, and change auditing are what make
+                                recovery actually work under pressure. The zero-trust group policy implementation showed how
+                                role-based network segmentation translates to concrete API calls.
+                            </p>
+                        </div>
+
+                        <div class="project-stats">
+                            <div class="stat-item">
+                                <span class="stat-value">15+</span>
+                                <span class="stat-label">Automation Scripts</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">3,000+</span>
+                                <span class="stat-label">Lines of Code</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">4</span>
+                                <span class="stat-label">Security Tiers</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -100,7 +356,7 @@
             <!-- AWS Cloud Projects -->
             <div class="project-category">
                 <h2 class="category-title">AWS Cloud Infrastructure</h2>
-                
+
                 <!-- Transit Gateway -->
                 <div class="project-detail" id="transit-gateway">
                     <div class="project-header">
@@ -112,14 +368,14 @@
                             <a href="https://github.com/Sparty-5A/aws-transit-gateway-hub" target="_blank" class="btn btn-small">View on GitHub</a>
                         </div>
                     </div>
-                    
+
                     <div class="project-content">
                         <p>
-                            Implemented hub-and-spoke architecture connecting multiple VPCs using AWS Transit Gateway. 
-                            Demonstrates transitive routing, automatic route propagation, and multi-AZ high availability 
+                            Implemented hub-and-spoke architecture connecting multiple VPCs using AWS Transit Gateway.
+                            Demonstrates transitive routing, automatic route propagation, and multi-AZ high availability
                             design. Reduces network complexity from O(N²) with VPC peering to O(N) with centralized routing.
                         </p>
-                        
+
                         <div class="project-features">
                             <h4>Architecture Features</h4>
                             <ul>
@@ -145,9 +401,9 @@
                         <div class="project-learning">
                             <h4>What I Learned</h4>
                             <p>
-                                This project showed me how enterprise cloud networking differs from VPC peering. Understanding 
-                                transitive routing, automatic route propagation, and the scalability advantages of hub-and-spoke 
-                                architecture gave me insight into how large organizations connect dozens of VPCs. The multi-AZ 
+                                This project showed me how enterprise cloud networking differs from VPC peering. Understanding
+                                transitive routing, automatic route propagation, and the scalability advantages of hub-and-spoke
+                                architecture gave me insight into how large organizations connect dozens of VPCs. The multi-AZ
                                 design taught me about cloud resilience patterns.
                             </p>
                         </div>
@@ -180,14 +436,14 @@
                             <a href="https://github.com/Sparty-5A/aws-site-to-site-vpn" target="_blank" class="btn btn-small">View on GitHub</a>
                         </div>
                     </div>
-                    
+
                     <div class="project-content">
                         <p>
-                            Built hybrid cloud VPN infrastructure connecting on-premises networks to AWS using VPN Gateway 
-                            and strongSwan. Implements dual IPSec tunnels with BGP dynamic routing for high availability 
+                            Built hybrid cloud VPN infrastructure connecting on-premises networks to AWS using VPN Gateway
+                            and strongSwan. Implements dual IPSec tunnels with BGP dynamic routing for high availability
                             and automatic failover. Comprehensive documentation demonstrates understanding of hybrid cloud patterns.
                         </p>
-                        
+
                         <div class="project-features">
                             <h4>Implementation Details</h4>
                             <ul>
@@ -214,9 +470,9 @@
                         <div class="project-learning">
                             <h4>What I Learned</h4>
                             <p>
-                                This project connected my networking background with cloud infrastructure. Understanding how 
-                                IPSec tunnels work in AWS, configuring BGP for automatic failover, and troubleshooting VPN 
-                                connectivity issues gave me practical experience with hybrid cloud patterns. The documentation 
+                                This project connected my networking background with cloud infrastructure. Understanding how
+                                IPSec tunnels work in AWS, configuring BGP for automatic failover, and troubleshooting VPN
+                                connectivity issues gave me practical experience with hybrid cloud patterns. The documentation
                                 process helped me understand the architecture deeply enough to explain it clearly.
                             </p>
                         </div>
@@ -234,14 +490,14 @@
                             <a href="https://github.com/Sparty-5A/aws-ipam-serverless" target="_blank" class="btn btn-small">View on GitHub</a>
                         </div>
                     </div>
-                    
+
                     <div class="project-content">
                         <p>
-                            Built IP Address Management system using serverless architecture. Handles subnet planning, 
-                            IP allocation, and conflict detection using Lambda, DynamoDB, and API Gateway. Includes 
+                            Built IP Address Management system using serverless architecture. Handles subnet planning,
+                            IP allocation, and conflict detection using Lambda, DynamoDB, and API Gateway. Includes
                             automated CI/CD pipeline with GitHub Actions and comprehensive testing with LocalStack.
                         </p>
-                        
+
                         <div class="project-features">
                             <h4>System Features</h4>
                             <ul>
